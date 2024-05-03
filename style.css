@@ -3,11 +3,15 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: auto;
+    /*overflow: auto;*/ 
 }
 
 body{
     background-color: #E6E6E6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
@@ -49,9 +53,9 @@ main{
 }
 
 .fundo-texto {
-    height: 100vh;
-    box-sizing: content-box;
-    padding: 0% 10% 0% 10%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0% 10% 10% 10%;
 }
 
 .titulo-texto{
@@ -62,12 +66,39 @@ main{
     text-align: center;
 }
 
+.subtitulo-texto{
+    font-size: 200%;
+    padding: 2% 0% 2% 0%;
+}
+
 p {
     text-indent: 50px;
     text-align: justify;
-  }  
+}  
+
+.wtt-fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 19px;
+    z-index: 99;
+    color: #fff;
+    background: #11b111;
+    padding: 4px 19px;
+    border-radius: 5px;
+}
+
+.wtt-fixed a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-whatsapp:before {
+    content: "\f232";
+}
 
 footer{
+    margin-top: auto;
     box-sizing: border-box;
     width: 100%;
     background-color: #FFFFFF;
